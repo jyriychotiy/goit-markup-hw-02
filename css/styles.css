@@ -1,14 +1,26 @@
-
-
+/* цвет основного текста #757575 */
+/* вторичный цвет текста #212121*/
+/* белый #E5E5E5 */
+/* акцент  #2196F3*/
+/* основной цвет фона #E5E5E5 */
+/* вторичный цвет фона #2F303A */
+/* root - это кастомные свойства или css переменные
+которые позволяют менять вна странице цвета и так далее */
+:root{ 
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
+    --accent-color:#2196F3;
+    --background-color:#E5E5E5;
+    }
 body{
     background-color: #E5E5E5;
-    color: #757575; 
+    color:var(--primary-text-color); 
 }
 .logo{
-   color: #2196F3; 
+   color: var(--accent-color);
 }
 .logo2{
-   color:#000000; 
+   color:var(--title-text-color);
 }
 /* если прописать просто list и вставлять его в те места где нужно убрать точки */
 ul{
@@ -16,36 +28,46 @@ ul{
 }
 
 /* site-nav */
-.site-nav .link {color:#000000 ;
+.site-nav .link {color:var(--title-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
-    color:#2196F3 ;
+    color: var(--accent-color);
+}
+.site-nav .link.curren{
+    color:var(--accent-color) ;
 }
 
 .logo{
-    color:#2196F3 ;
+    color:var(--accent-color);
 }
 
 .logo2{
-    color:#000000 ;
+    color:var(--title-text-color);
 }
 /* секция hero */
 .hero-title{
-   color: #ffffff; 
+   color: var(--primary-text-color); 
 }
 
 /* секции cection, section-title */
 .section-title, .title{
-    color:#000000 ;
+    color: var(--title-text-color);
+}
+/* Button */
+.button{
+ color: var(--accent-color);  
+ background-color:var(--background-color) ; 
+ font-size:14px;
+ padding: 3px 15px;
+ display:inline-block ;
+ border: 1px solid black;
+}
+
+.button.pramary{
+background-color: var(--accent-color);
+color: var(--background-color);
 }
 
 
 
-
-/* цвет основного текста #757575 */
-/* вторичный цвет текста #212121*/
-/* белый #E5E5E5 */
-/* акцент  #2196F3*/
-/* основной цвет фона #E5E5E5 */
-/* вторичный цвет фона #2F303A */
