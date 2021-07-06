@@ -1,0 +1,51 @@
+
+
+body{
+    background-color: #E5E5E5;
+    color: #757575; 
+}
+.logo{
+   color: #2196F3; 
+}
+.logo2{
+   color:#000000; 
+}
+/* если прописать просто list и вставлять его в те места где нужно убрать точки */
+ul{
+    list-style: none
+}
+
+/* site-nav */
+.site-nav .link {color:#000000 ;
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color:#2196F3 ;
+}
+
+.logo{
+    color:#2196F3 ;
+}
+
+.logo2{
+    color:#000000 ;
+}
+/* секция hero */
+.hero-title{
+   color: #ffffff; 
+}
+
+/* секции cection, section-title */
+.section-title, .title{
+    color:#000000 ;
+}
+
+
+
+
+/* цвет основного текста #757575 */
+/* вторичный цвет текста #212121*/
+/* белый #E5E5E5 */
+/* акцент  #2196F3*/
+/* основной цвет фона #E5E5E5 */
+/* вторичный цвет фона #2F303A */
