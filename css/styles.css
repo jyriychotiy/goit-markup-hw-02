@@ -1,7 +1,7 @@
 /* цвет основного текста #757575 */
-/* вторичный цвет текста #212121*/
-/* белый #E5E5E5 */
-/* акцент  #2196F3*/
+/* вторичный цвет текста #212121 */
+/* белый #ffffff */
+/* акцент #2196F3 */
 /* основной цвет фона #E5E5E5 */
 /* вторичный цвет фона #2F303A */
 /* root - это кастомные свойства или css переменные
@@ -10,25 +10,51 @@
     --primary-text-color:#757575;
     --title-text-color:#212121;
     --accent-color:#2196F3;
-    --background-color:#E5E5E5;
+    --background-color:#ffffff;
+    --primary-color:#2F303A 
     }
+    
 body{
-    background-color: #E5E5E5;
+    background-color: var(--background-color);
     color:var(--primary-text-color); 
-}
-.logo{
-   color: var(--accent-color);
-}
-.logo2{
-   color:var(--title-text-color);
-}
-/* если прописать просто list и вставлять его в те места где нужно убрать точки */
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    }
+
 ul{
     list-style: none
 }
+a{
+    text-decoration: none;
+}
+
+.logo{
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2
+}
+
+/* header */
+
+.header .accent{
+    color:var(--title-text-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2
+}
+/* если прописать просто list и вставлять его в те места где нужно убрать точки */
+
 
 /* site-nav */
 .site-nav .link {color:var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
@@ -37,7 +63,7 @@ ul{
 .site-nav .link.curren{
     color:var(--accent-color) ;
 }
-
+/* logo */
 .logo{
     color:var(--accent-color);
 }
@@ -45,29 +71,142 @@ ul{
 .logo2{
     color:var(--title-text-color);
 }
+
+/* adress footer vs header */
+
+.adress .link{
+    color: var(--primary-text-color);
+}
+
+.adress .link:hover,
+.adress .link:focus{
+    color: var(--accent-color) ;
+}
 /* секция hero */
 .hero-title{
-   color: var(--primary-text-color); 
+   color:var(--background-color) ;
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   text-align: center;
+   letter-spacing: 0.06em;
+}
+.hero{
+    background-color: var(--primary-color);
 }
 
 /* секции cection, section-title */
 .section-title, .title{
     color: var(--title-text-color);
-}
-/* Button */
-.button{
- color: var(--accent-color);  
- background-color:var(--background-color) ; 
- font-size:14px;
- padding: 3px 15px;
- display:inline-block ;
- border: 1px solid black;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16px;
+    text-align: center;
 }
 
-.button.pramary{
-background-color: var(--accent-color);
-color: var(--background-color);
+.com, .com-title{
+    font-size: 16px;
+    line-height:1.18;
+    text-align: center;  
+    }
+
+.com{
+    color: var(--title-text-color);
+    font-weight: 500;   
+}
+
+.feature-list .title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.feature-list .text{
+   font-size: 14px;
+   line-height: 1.71;
+}
+
+.foto .post{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    }
+
+    .post .text{
+    font-size: 16px;
+    line-height: 1.87;
+    }
+
+    /* Button */
+    .button{
+    background-color:var(--background-color);
+    color: var(--title-text-color);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.pramary{
+ cursor: pointer;
+ background-color: var(--accent-color);
+ color:var(--background-color);
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 1.2;
+}
+.pramary:hover{
+    background-color: rgb(252, 7, 7);
+}
+
+.button:hover, 
+.button:focus{
+    background-color:var(--accent-color);
+    color: var(--background-color);
+}
+/* text в портфолио */
+.text{
+    color:var(--primary-text-color) ;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer .accent{
+    color:var(--title-text-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;}

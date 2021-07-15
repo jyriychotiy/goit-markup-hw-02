@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="" class="logo">Web<span class="logo2">Studio</span></a>
+    <header class="header">
+      <a href="" class="logo">Web<span class="accent">Studio</span></a>
       <nav class="site-nav">
         <ul>
           <li><a href="" class="link curren">Студия</a></li>
@@ -17,9 +21,9 @@
           <li><a href="" class="link">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="">info@devstudio.com</a></li>
-        <li><a href="">+38 096 111 11 11</a></li>
+      <ul class="adress">
+        <li><a href="" class="link">info@devstudio.com</a></li>
+        <li><a href="" class="link">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <!--Вложен тег Div для будущего баннера-->
@@ -31,7 +35,7 @@
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
             ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <a href="" class="button pramary">Заказать услугу</a>
+          <button type="button" class="pramary button">Заказать услугу</button>
         </div>
       </section>
 
@@ -44,19 +48,21 @@
           </li>
           <li>
             <h3 class="title">Пунктуальность</h3>
-            <p>
+            <p class="text">
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
           </li>
           <li>
             <h3 class="title">Планирование</h3>
-            <p>
+            <p class="text">
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
           </li>
           <li>
             <h3 class="title">Современные технологии</h3>
-            <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            <p class="text">
+              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+            </p>
           </li>
         </ul>
       </section>
@@ -82,36 +88,36 @@
         <ul>
           <li>
             <img src="./img/demchenko.jpg" alt=" Igor Demchenko" width="270" height="260" />
-            <h3 class="title">Игорь Демченко</h3>
-            <p>Product Disigner</p>
+            <h3 class="com">Игорь Демченко</h3>
+            <p class="com-title">Product Disigner</p>
           </li>
           <li>
             <img src="./img/repina.jpg" alt="Olga Repina" width="270" height="260" />
-            <h3 class="title">Ольга Репина</h3>
-            <p>Frontend Developer</p>
+            <h3 class="com">Ольга Репина</h3>
+            <p class="com-title">Frontend Developer</p>
           </li>
           <li>
             <img src="./img/tarasov.jpg" alt="Nikolay Tarasov" width="270" height="260" />
-            <h3 class="title">Николай Тарасов</h3>
-            <p>Marketing</p>
+            <h3 class="com">Николай Тарасов</h3>
+            <p class="com-title">Marketing</p>
           </li>
           <li>
             <img src="./img/ermakov.jpg" alt="Mihail Ermakov" width="270" height="260" />
-            <h3 class="title">Михаил Ермаков</h3>
-            <p>UI Designer</p>
+            <h3 class="com">Михаил Ермаков</h3>
+            <p class="com-title">UI Designer</p>
           </li>
         </ul>
       </section>
-      <footer>
-        <a href="" class="logo">Web<span class="logo2">Studio</span> </a>
-        <address>
-          <p>г. Киев, пр-т Леси Украинки, 26</p>
-          <ul>
-            <li><a href="">info@devstudio.com</a></li>
-            <li><a href="">+38 096 111 11 11</a></li>
-          </ul>
-        </address>
-      </footer>
     </main>
+    <footer class="footer">
+      <a href="" class="logo">Web<span class="accent">Studio</span> </a>
+      <address>
+        <p>г. Киев, пр-т Леси Украинки, 26</p>
+        <ul class="adress">
+          <li><a href="" class="link">info@devstudio.com</a></li>
+          <li><a href="" class="link">+38 096 111 11 11</a></li>
+        </ul>
+      </address>
+    </footer>
   </body>
 </html>
